@@ -1,0 +1,11 @@
+add multiple types of production processes to mimic different kinds of L-systems, 
+could be for optimization (i.e. DOL-systems insteand of parametric)
+or for illustrating a complex process (timed/graph L-systems) 
+
+could also have a parameterDescriptors constant, an array of strings that weakly type the parameters as properties, 
+i.e. time, connections, position etc...
+
+
+add more static classes
+ - for managing the patcher network, 
+ - for managing info about the active experiment

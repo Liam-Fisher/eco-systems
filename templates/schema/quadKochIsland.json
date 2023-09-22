@@ -1,0 +1,15 @@
+{
+    "rules": [
+        {
+            "syntax": "#0#",
+            "maps": ["zero"],
+            "successors": [{"indices": [0,2,0,1,0,1,0,0,2,0,2,0,1,0]}]
+        }
+    ],
+    "hooks": {
+            "pre_production": ["noise"]
+    },
+    "props": {
+        "noiseVal": 0
+    }
+}

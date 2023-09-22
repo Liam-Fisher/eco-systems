@@ -1,0 +1,28 @@
+{
+// the parametric Axiom
+    "word": {
+// inital parameters
+    "params": [[0.5], [1], [0]],
+// use one of the following properties to set the characters in the axiom:
+    // human-readable, only use if all chars are regexp safe, 
+    "letters": "ABC", 
+    // utf-16le values (0-65536), excluding regexp safe chars
+    "codes": [66,67,68],
+    // indexed letters of the alphabet, use for an "abstract" system 
+    "indices": [0,1,2]
+    },
+// properties of system.vars 
+// these will override the defaults in interpretations.defaultVars
+    "vars": {
+        "stepSize": 0.01,
+        "turnIncrement": 0.25,
+        "x_position": 0,
+        "y_position": 0,
+        "direction": 0
+    },
+    // optional/custom properties of system
+    "consts": {
+        "maxLetters":  1000000,
+        "maxGenerations": 4
+    }
+}

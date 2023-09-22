@@ -1,0 +1,76 @@
+{
+    "settings": {
+        "productionLog": true,
+        "interpretationLog": true
+    },
+    "options": {},
+    "interpreters": {
+    "stmInterpreter": {
+        "attrs": {
+            "channels": 1
+        },
+        "fileGroupSizes": 4,
+        "method": "SimpleBuffer",
+        "mode": "streaming",
+        "printSystems": true,
+        "sequenceSchema": {
+            "0": ["A"],
+            "1": ["B"]
+        },
+        "format": "dsp_buffer"
+    },
+    "strInterpreter": {
+        "attrs": {
+            "channels": 1
+        },
+        "fileGroupSizes": 2,
+        "printSystems": true,
+        "method": "MultichannelBuffer",
+        "mode": "storing",
+        "sequenceSchema": {
+            "systemA": ["clip"]
+        },
+        "format": "dsp_buffer"
+    }
+},
+    "systems": {
+        "systemA": {
+            "axiom": 0
+        }
+    },
+    "syntax": {
+        "words": [[0,0,1,1],[1,0,0,1],[1,0,1],[0,1,1,0],[0,1,0]],
+        "axioms": [[0, [-1],[0],[1],[0]]],
+        "contexts": [],
+        "letters": [65,66]
+    },
+    "timetable": {
+        "generations": 15,
+        "schemata": {
+            "[2-9]|1[0-4]": {
+                "schemaA": ["systemA"]
+            }
+        },
+        "interpretation": {
+                "[2-9]|1[0-4]": {
+                    "strInterpreter": ["systemA"],
+                    "stmInterpreter": ["systemA"]
+                }
+            }
+    },
+    "schemata": {
+        "schemaA": {
+            "rules": [{
+                "strictPredecessor": 0,
+                "successors": [["formatTesting_randomSuccessor",1],["formatTesting_randomSuccessor",2]]
+            },
+            {
+                "strictPredecessor": 1,
+                "successors": [["formatTesting_randomSuccessor",3],["formatTesting_randomSuccessor",4]]
+            }],
+            "hooks": {
+                "pre_mapping": ["noise"]
+            }
+        }
+    }
+}

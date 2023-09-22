@@ -1,0 +1,13 @@
+Interpretation methods are done in worker threads, which need to be passed:
+    - the filepath of the module they use to interpreter the system 
+    - the filepath of the module they use to format the interpreter results
+    - a schedule containing the generations they interpret at
+
+interpretations produce files that can be read by standard max objects.
+these are known as "target objects".
+the module used to interpret the system
+for each possible maxclass of target object, there exist at least 1 formatting method (streaming, stored, or possibly both)
+the formatting method is an async generator function 
+streaming format takes an async iterable as an argument and yields a string to be written to the stream.
+stored format defines a data object, then assigns the results of the streaming  properties  
+or the , 

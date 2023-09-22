@@ -1,0 +1,25 @@
+{
+	"pattrstorage" : 	{
+		"name" : "storage",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"timeout" : [ 100000 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"timeout" : [ 2000000 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

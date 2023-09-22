@@ -1,0 +1,6 @@
+Different types of algorithm can be used to create an interpretable string.
+These should be determined from the types and function of the messages accepted by the path of nodes in the network.
+For example:
+an mc.chord object accepts dictionary messages that represents lists of notes.
+we could store add write these messages as textStreams and emit them as json - to be read by a dictionary in max and sent to these objects
+we could also store "dynamic" editing messages in an mtr object, OR, a   

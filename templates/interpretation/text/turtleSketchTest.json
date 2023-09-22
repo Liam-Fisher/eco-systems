@@ -1,0 +1,26 @@
+{
+    "attrs": {
+        "precision": 4
+    },
+    "dataMode": "streaming",
+    "iterMode": "serial",
+    "method": "SimpleTurtle",
+    "sequenceSchema": [{
+        "moveForward": {
+            "letters": "F"
+        },
+        "turnLeft": {
+            "codes": [71]
+        },
+        "turnRight": {
+            "indices": [2]
+        }
+    }],
+    "props": {
+        "stepSize": 0.01,
+        "turnIncrement": 0.25,
+        "x_position": 0,
+        "y_position": 0,
+        "direction": 0
+    }
+}

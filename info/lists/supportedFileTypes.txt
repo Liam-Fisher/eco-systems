@@ -1,0 +1,53 @@
+BINARY DATA
+BYTES
+filein 
+AUDIO
+sfplay~/sflist~ /buffer~ (“readraw” filepath)
+IMAGE
+jit.matrix/jit.matrixset  (.jxf)
+
+TEXT STRING (.txt)
+GENERIC
+text/jit.text (.txt)
+SPECIFIC
+coll (index, …items;)
+qlist (interval target …args;)
+seq (timepoint …midicodes;)
+
+
+JSON  (.json)
+GENERIC
+dict
+SPECIFIC
+mtr 
+crosspatch
+umenu
+pattrstorage 
+mc.pattern~
+mc.chord~
+cascade~, mc.cascade~, filtergraph~
+groove~,mc.groove,sfplay~,stretch~,
+matrix, matrix~, mc.matrix~
+jit.record,jit.vcr~
+
+PATCHER (.maxpat)
+GENERIC
+pcontrol (“load” filepath) 
+// dynamic object creation required
+bpatcher
+SPECIFIC
+mc.poly~ (@patchername filepath[])
+mc.pfft~ (args[0] filepath)
+mc.gen/mc.gen~ (.gendsp)
+jit.gen (.genjit)
+
+CODE
+GEN
+genExpr (.genexpr)
+JAVASCRIPT
+js/jsui (.js) (ECMA3)
+// dynamic object creation required
+node.script( .js) (ESNEXT)
+SHADER 
+jit.gl.shader,jit.gl.slab, (.jxs)
+jit.gl.pass (.jxp)

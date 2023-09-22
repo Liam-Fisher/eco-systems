@@ -1,0 +1,15 @@
+
+'3m'|'bsort'|'change'|'findbounds'|'histogram'|'normalize'|'fft'|'avg4'|'brass'|'convolve'|'fastblur'|'robcross'|'sobel'|'wake'|'argb2ayuv'|'argb2grgb'|'argb2uyvy'|'ayuv2argb'|'ayuv2luma'|'ayuv2uyvy'|'brcosa'|'colorspace'|'grgb2argb'|'hsl2rgb'|'hue'|'luma2uyvy'|'luma2ayuv'|'rgb2hsl'|'rgb2luma'|'traffic'|'uyvy2argb'|'uyvy2ayuv'|'uyvy2luma'|'alphablend'|'chromakey'|'keyscreen'|'lumakey'|'op'|'shade'|'xfade'|'concat'|'coerce'|'demultiplex'|'dimmap'|'glue'|'matrix'|'matrixset'|'matrixinfo'|'multiplex'|'pack'|'scissors'|'split'|'submatrix'|'unpack'|'thin'|'avc'|'desktop'|'displays'|'bfg'|'desktop'|'gencoord'|'gradient'|'graph'|'lcd'|'noise'|'plot'|'movie'|'fill'|'iter'|'spill'|'charmap'|'clip'|'conway'|'expr'|'linden'|'map'|'op'|'scalebias'|'transpose'|
+'buffer~'|'catch~'|'peek~'|'poke~'|'release~'
+'dx.grab'|'dx.videoout'|'la.determinant'|'la.diagproduct'|'la.inverse'|'la.mult'|'la.trace'|'la.uppertri'|'net.send'|'net.recv'|'gl.asyncread'|'gl.cubemap'|'gl.gridshape'|'gl.graph'|'gl.handle'|'gl.isosurf'|'gl.imageunit'|'gl.mesh'|'gl.model'|'gl.multiple'|'gl.nurbs'|'gl.plato'|'gl.render'|'gl.shader'|'gl.sketch'|'gl.slab'|'gl.text2d'|'gl.text3d'|'gl.texture'|'gl.videoplane'|'gl.volume'|'p.bounds'|'p.shiva'|'p.vishnu'|'str.fromsymbol'|'str.op'|'str.regexp'|'str.tosymbol'|
+'movie'|'record'|'vcr'|'mxform2d'|'plume'|'rota'|'rubix'|'repos'|'resamp'|'sprinkle'|'altern'|'ameba'|'brcosa'|'eclipse'|'fluoride'|'freeframe'|'glop'|'hatch'|'plur'|'roy'|'scanoffset'|'scanslide'|'scanwrap'|'slide'|'streak'|'tiffany'|'wake'|'textfile'|'window'|'scope'|'cycle'|'fprint'|'openexr'|'print'|'turtle'|'uldl'|
+
+// UI
+cellblock;
+scope;
+pwindow;
+obref;
+// helper
+reverse;
+qball;
+qfaker;

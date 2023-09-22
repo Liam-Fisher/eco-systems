@@ -1,0 +1,16 @@
+ERROR:: stack "Error: Cannot find module 'C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\data\\templates\\schemata\\json.test'
+Require stack:
+- C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\js_src\\loaders\\l3_schemaLoader.js
+- C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\js_src\\helpers\\loader.js
+- C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\mainSystemInterface.js
+- C:\\Program Files\\Cycling '74\\Max 8\\resources\\packages\\Node for Max\\source\\lib\\nsRunner.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Object.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Function.Module._load (C:\\Program Files\\Cycling '74\\Max 8\\resources\\packages\\Node for Max\\source\\lib\\nsRunner.js:67:24)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Function.load_schema (C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\js_src\\loaders\\l3_schemaLoader.js:73:32)
+    at Function.load_system_blueprint (C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\js_src\\loaders\\l4_systemLoader.js:32:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.load_systems (C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\js_src\\loaders\\l4_systemLoader.js:22:17)
+    at async Function.load_blueprint (C:\\Users\\Liam\\Documents\\Max 8\\Projects\\AutoArt\\code\\js_src\\loaders\\l6_blueprintLoader.js:14:13)"

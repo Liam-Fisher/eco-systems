@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esm",
+      "outDir": "js_src",
+      "rootDir": "ts_src",
+      "removeComments": true
+    }
+}

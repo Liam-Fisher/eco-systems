@@ -1,0 +1,15 @@
+{
+	"preset_data" : [ 		{
+			"number" : 1,
+			"data" : [ 5, "obj-24", "toggle", "int", 1, 5, "obj-78", "attrui", "attr", "position", 7, "obj-78", "attrui", "list", 0.0, 0.0, 2.0 ]
+		}
+, 		{
+			"number" : 2,
+			"data" : [ 5, "obj-24", "toggle", "int", 0, 5, "obj-78", "attrui", "attr", "position", 7, "obj-78", "attrui", "list", 0.0, 0.0, 2.0 ]
+		}
+, 		{
+			"number" : 3,
+			"data" : [ 5, "obj-25", "jit.world", "enable", 0, 5, "obj-25", "jit.world", "displaylink", 0, 5, "obj-25", "jit.world", "interval", 17, 5, "obj-25", "jit.world", "fps", 60.0, 5, "obj-25", "jit.world", "fsaa", 0, 6, "obj-25", "jit.world", "dim", 640, 480, 6, "obj-25", "jit.world", "size", 640, 480, 6, "obj-25", "jit.world", "windowposition", 100, 100, 8, "obj-25", "jit.world", "rect", 100, 100, 740, 580, 5, "obj-25", "jit.world", "floating", 0, 5, "obj-25", "jit.world", "fullscreen", 0, 5, "obj-25", "jit.world", "fsmenubar", 1, 5, "obj-25", "jit.world", "border", 1, 5, "obj-25", "jit.world", "sync", 1, 5, "obj-25", "jit.world", "shared", 1, 5, "obj-25", "jit.world", "visible", 1, 8, "obj-25", "jit.world", "erase_color", 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0, 5, "obj-25", "jit.world", "output_texture", 0, 5, "obj-25", "jit.world", "capture", 0, 5, "obj-25", "jit.world", "output_matrix", 0, 5, "obj-25", "jit.world", "matrix_mode_async", 1, 5, "obj-25", "jit.world", "enable_cornerpin", 0, 5, "obj-25", "jit.world", "auto_handle", 0, 5, "obj-25", "jit.world", "esc_fullscreen", 1, 7, "obj-25", "jit.world", "position", 0.0, 0.0, 0.0, 8, "obj-25", "jit.world", "rotate", 0.0, 0.0, 0.0, 1.0, 8, "obj-25", "jit.world", "quat", 0.0, 0.0, 0.0, 1.0, 7, "obj-25", "jit.world", "rotatexyz", 0.0, 0.0, 0.0, 7, "obj-25", "jit.world", "scale", 1.0, 1.0, 1.0, 5, "obj-25", "jit.world", "ortho", 0, 5, "obj-25", "jit.world", "drawbang", "prerender", 5, "obj-25", "jit.world", "name", "ctx", 5, "obj-25", "jit.world", "preserve_aspect", 1 ]
+		}
+ ]
+}

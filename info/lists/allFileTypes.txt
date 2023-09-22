@@ -1,0 +1,145 @@
+
+GENERIC
+    // Application
+APPL - Application - .app
+APPL - Application - .exe
+    // Markup
+XML - XML - .xml
+XSLT - XSLT file - .xsl
+YAML - YAML - .yaml
+YAML - YAML - .yml
+    //ZIP
+ZIP - Zip archive - .zip
+DAW  
+AFxB - FXB file - .fxb
+AFxP - FXP file - .fxp
+ampf - Ableton Live Max Device - .amp
+amxd - Ableton Live Max Device - .amxd
+aPcs - VST Plug-In - .dll
+aPcs - VST plug-in - .vst
+AUin - Audio Unit Plug-in - .auinfo
+AUpi - Audio Unit Plug-in - .component
+
+MAX
+    // OBJECTS
+iLaF - External object - .mxd
+iLaX - Macintosh External object - .mxo
+xdll - Windows external object - .mxe
+mx64 - Windows x64 external object - .mxe64
+    // JSON 
+gDSP - dsp.gen File - .gendsp
+JSON - Defaults file - .maxdefaults
+JSON - Defaults definitions - .maxdefines
+JSON - Help Patcher - .maxhelp
+JSON - Patcher - .maxpat
+JSON - Palette File - .maxpalette
+JSON - Preferences file - .maxpref
+JSON - Preset file - .maxpresets
+JSON - Prototype - .maxproto
+JSON - Query file - .maxquery
+mSnp - Snippet file - .maxsnip
+mPrj - Project - .maxproj
+mQur - Max Collection File - .maxcoll
+    // DATA
+JiT! - Jitter data file - .jxf
+DATA - audio file - .data
+dict - Dictionary Instance - .maxdict
+GenX - GenExpr file - .genexpr
+    // OTHER    
+mZip - Packed Project - .maxzip
+mx@c - Collective - .mxf
+mLsn - Max Lesson File - .maxlesson
+mMap - Max Mapping File - .maxmap
+mPak - Packed Package - .maxpack
+TEXT - XML Vignette file - .maxvig.xml
+
+
+
+IMAGE
+TIFF - TIFF file - .tiff
+JPEG - JPEG file - .jpeg
+PNG - PNG file - .png
+PICT - PICT file - .pict
+PICT - PICT file - .pict
+8BPS - Photoshop file - .psd
+BMP - BMP file - .bmp
+GIFf - GIF file - .gif
+
+PROGRAMMING
+cafe - Java class file - .class
+jar - Java Archive file - .jar
+TEXT - Java source file - .java
+jlua - Lua Source File - .lua
+TEXT - OpenGL Shading Language file - .glsl
+TEXT - Javascript file - .js
+
+
+AUDIO 
+AIFF - AIFF audio file - .aiff
+WAVE - WAVE audio file - .wav
+
+CAF - CAF audio file - .caf
+FLAC - FLAC audio file - .flac
+M4a - AAC audio file - .m4a
+Mp3 - MP3 audio file - .mp3
+ULAW - SND file - .snd
+
+VIDEO
+VfW - AVI video - .avi
+M4V - Video file - .m4a
+MooV - Video - .mov
+MPEG - Video - .mpeg
+mpg4 - Video - .mp4
+WMV2 - Video File - .asf
+WMV3 - Video File - .wmv
+
+WEB
+css - CSS file - .CSS
+TEXT - Web page - .html
+svg - SVG file - .svg
+SWFL - Flash file - .swf
+
+MODELING
+    // GENERIC
+Jobj - Wavefront Object Model File - .obj
+Jnff - Neutral File Format File - .nff
+Jstl - Stereolithography Model File - .stl
+Jply - Stanford Polygon Library Model File - .ply
+Jter - Terragen Terrain File - .ter
+    // 3D GameStudio
+J3dm - 3D GameStudio Model File - .mdl
+Jhmp - 3D GameStudio Terrain File - .hmp
+    // 3ds Max
+J3ds - 3ds Max 3DS Model File - .3ds
+Jase - 3ds Max ASE Model File - .ase
+Jbvh - Biovision BVH Motion Capture File - .bvh
+Jcsm - CharacterStudio Motion Capture File - .csm
+Jvta - Valve VTA Model File - .vta
+    // AC3D
+Jac - AC3D Model File - .ac
+    // AutoCAD
+Jdxf - AutoCAD DXF Model File - .dxf
+    // Autodesk
+FBX - Autodesk FBX Model File - .Model
+    // Blender
+Jbln - Blender 3D Model File - .blend
+    // Blitz3D
+Jb3d - BlitzBasic 3D Model File - .b3d
+    // Collada
+Jdae - Collada Model File - .dae
+    // Irrlicht
+Jirm - Irrlicht Mesh File - .irrmesh
+Jirr - Irrlicht Scene File - .irr
+    // LightWave 3D
+Jlwo - LightWave Model File - .lwo
+    // MilkShape 3D
+Jmsd - Milkshape 3D Model File - .ms3d
+    // Ogre3D
+Jogr - Ogre3D XML Model File - .mesh.XML
+    // Quick3D
+Jq3d - Quick3D Q3D Model File - .q3d
+Jq3s - Quick3D Q3S Model File - .q3s
+    // POV-Ray
+Jraw - PovRAY Raw Model File - .raw
+    // TrueSpace
+Jscb - TrueSpace SCB Model File - .scb

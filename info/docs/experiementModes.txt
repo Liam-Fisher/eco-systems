@@ -1,0 +1,14 @@
+There are two basic modes: Basic and Full. 
+Basic includes the minimum amount of functionality
+Full includes all of the functionality availible 
+
+The other modes: Test, Design, Auto, Parallel, Interactive etc. have all of the functionality availible in "Basic" and a specific subset of the functionality avaioble in "Full" 
+
+
+// Basic Modes
+
+"Simple" mode creates and runs an experiment from a single json file
+simple experiments are run automatically without the ability to pause.
+
+the network script generates max objects automatically, but does not create recording 
+

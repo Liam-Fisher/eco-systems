@@ -1,0 +1,25 @@
+In this context, a template is a json file that describes some aspect of the system or network 
+There are 5 types of template: systemBlueprints, initialStates, Schemata, Subroutines and networkTopologies
+
+
+Blueprints are basically a list of dependencies for the system, 
+
+
+
+Subroutines are compiled into modules when the system is created. More subroutines can be added but these are created dynamically
+during runtime, using the "Function()" constructor. 
+Each subroutine includes: 
+a list of arguments, which are system contexts (production, global, stage, message)
+production is almost always included in non-stageModifier routines,
+global is usually included in interpretive and modifier routines,
+message is almost
+
+
+
+
+
+
+
+
+
+

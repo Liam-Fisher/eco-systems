@@ -1,0 +1,58 @@
+{
+    "rules": [
+        {
+            "syntax": "#0#",
+            "maps": [
+                "zero"
+            ],
+            "successors": [
+                [
+                    0,
+                    2,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    2,
+                    0,
+                    2,
+                    0,
+                    1,
+                    0
+                ]
+            ]
+        }
+    ],
+    "hooks": {
+        "pre": {
+            "cycle": [], // when the system generator is first called
+            "production": [], // before each replacement
+            "mapping": [], // before each mapping
+            "interpretation": [] // before interpretation begins
+        },
+        "post": {
+            "cycle": [],// before system exits
+            "production": [], // after each replacement
+            "mapping": [], // after each mapping
+            "interpretation": [] // after interpretation ends
+        }
+    },
+    "interpretations": { // subroutine/interpretation/files
+        "text": [ // for each text file in the system
+            [ // for each letter in the alphabet
+                [
+                    "turtle_moveForward" // call the following interpretations
+                ],
+                [
+                    "turtle_turnLeft"
+                ],
+                [
+                    "turtle_turnRight"
+                ]
+            ]
+        ],
+        "json": [] // same but instead of a file stream, an object has properties assigned
+    }
+}

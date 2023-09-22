@@ -1,0 +1,77 @@
+ // = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = = \\
+[// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // /] 
+[/ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //]
+[/// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // ///]
+[ // /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///     MATERIALS     // /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// // ]  
+[/// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // ///]
+[/ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //]
+[// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // /]    
+ \\ = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = = //
+             
+ :: ::: :: : :: ::: :: :: ::: :: : :: ::: :: : :: ::: :: : :: :::    IndexWords    ::: :: : :: ::: :: : :: ::: :: : :: ::: :: : :: ::: :: : :: ::: :: 
+
+ :: ::: :: : :: ::: :: :: ::: :: : :: ::: :: : :: ::: :: : :: :::     Contexts     ::: :: : :: ::: :: : :: ::: :: : :: ::: :: : :: ::: :: : :: ::: :: 
+
+    Contexts are a subset of Regular Expressions that are used as the target patterns for lookahead/lookbehind assertions, then prepended or appended 
+to a letter in the alphabet, then enclosed in parentheses, creating a capturing group associated with a specific production rule for that letter. Each
+of these groups separated by disjunctions to form the "Production Pattern".
+    if two letters (LETTER_0 and LETTER_1) had two contexts each, the regular expression might look like this:
+    <example>
+    ((?<=R_CTX_0_A)LETTER_0(?=R_CTX_0_A))|((?<=R_CTX_0_B)LETTER_0(?=R_CTX_0_B))|((?<=L_CTX_1_A)LETTER_1(?=R_CTX_1_A))|((?<=L_CTX_1_B)LETTER_1(?=R_CTX_1_B))
+    
+    
+They are assumed to have the global flag (g) set, and may also have the unicode, 
+
+    They use the following regular expression symbols, and are assumed to have the global flag set, and may have the unicode flag set.
+    ###############
+    ### (?:x)   ### non-capturing group
+    ### |       ### disjunction  
+    ### [xyz]   ### character class
+    ### x{m,n}  ### range quantifier
+    ###############
+
+    Contexts also have a specific, tree-like structure. they are made up of one or multiple of the following types, separated by disjunctions
+1. a LETTER - the string representation of a unicode value in the alphabet
+2. an ATOM - multiple LETTERs enclosed in character class brackets
+3. a STRING - multiple STRINGs/ATOMs, or an ATOM/LETTER followed by a quantifier
+4. a GROUP - multiple STRINGs/GROUPs, separated by disjunctions and enclosed in non-capturing group parentheses.
+5. a CHOICE - multiple GROUPs/LETTERs
+
+When the UI is active, the input SHIFT+(L/A/S/G/C) will trigger a dialog box for creating a string of the corresponding type.
+the input (SHIFT+ENTER) creates a new child node for the current context;  
+the inputs (SHIFT+UP|LEFT|RIGHT|DOWN) are used to navigate the tree for the active context.
+the input (SHIFT+DELETE) is used to remove a node and all its children from the tree.
+the input (SHIFT+BACKSPACE) is used to remove a node and rebuild the tree by adding the deleted node's children to its parent.
+
+contextTreeNodes have {
+    "values"?:
+    "children":
+    "type":
+}
+
+LETTER: 
+ATOM
+STRING
+GROUP
+CHOICE
+ // = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = = \\
+[// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // /] 
+[/ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //]
+[/// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // ///]
+[ // /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///    SUBROUTINES    // /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// // ]  
+[/// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // ///]
+[/ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //]
+[// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // /]    
+ \\ = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = =  = = = = //
+    
+
+
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //  
+/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///     RECORDING    /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// 
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //  
+    
+     

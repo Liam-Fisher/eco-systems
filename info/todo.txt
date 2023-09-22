@@ -1,0 +1,52 @@
+ToDo
+debug interpreter filewriting
+ - store output files in experiments/<experimentID>/<target-maxclass>/<interpreterID_...systemIDs_Generation>
+
+fixup UI for mapping interpreter files to patcher objects
+
+create UI for Systems linkages
+
+create UI for entering words
+
+
+Debug: get patcher and objects to load
+
+Edit patcher to draw a simple turtle object from coll and create an image file
+make patcher stream the drawinf and create a video file
+create a patcher that streams the values of a table as audio and create an audio file
+combine patchee and create an audiovisual file
+
+Create the buffer and matrix interpreters
+Create a buffer interpretation method that
+uses some kind of parameter noise (possibly smoothing function based on letters?) 
+
+create a matrix interpretation method that uses parameters to generate hue/saturation values 
+
+Create the dict interpreter class
+
+add dict formats for chord, pattern and events
+
+create interpretation methods and a patcher that uses these plus a generic dictionary 
+
+create the model interpreter class
+
+add model helper for vertex buffers
+create a patcher that loads a model, and a script that saves it as an image
+
+add model helpers for textures (should use code from matrix) 
+test with a patcher
+
+add model helpers for animations, and a patcher that uses these plus an events dictionary to record a video
+
+add dict helpers for List and warp, as well as associated methods and patchers
+
+add model helpers for morph targets and test
+
+add design UI for each blueprint 
+
+add a design/test UI for subroutines 
+
+add cloud exporting for generated media 
+Create a “best practices” guide (with examples)
+
+design an experiment documentation protocol

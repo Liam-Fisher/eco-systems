@@ -1,0 +1,22 @@
+{ 
+    "defaultVars": { // default properties for the interpretation
+        "stepSize": 0.01,
+        "turnIncrement": 0.25,
+        "x_position": 0,
+        "y_position": 0,
+        "direction": 0
+    },
+    "text": {
+        "folder": "turtle2D", // a subroutines/text folder
+        // use the following if folder contains extra interpretations
+        "files": ["moveForward", "turnLeft", "turnRight"],
+        // use the one or more of the following if the alphabet contains extra letters
+        // indices will override codes, and codes will override letters
+        "indices": [0,2,3],
+        "codes": [65,66,68],
+        "letters": "ABC" // only if ascii chars are used
+    },
+    "json": {} // a subroutines/json
+    // this is exactly the same but instead of returning a string for a file stream, an object has properties assigned to it, 
+    // the subroutines should reflect this
+}

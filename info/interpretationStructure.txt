@@ -1,0 +1,70 @@
+At the end of a generation, 
+
+Interpretations exist for the "Data" objects: table, buffer, collection, dictionary and matrix
+Interpretations can also be a glAssetGroup, including 
+
+
+table Interpreters accept 1 system and 1 or no methods, and are active for 1 generation
+no methods will write the unicode values of the system letters to a table 
+buffer Interpreters accept 1 system and 1 or no methods, and are active for 1 generation 
+no methods will write the parameter values of the system letters to a bufer, with channels equal to parameter size
+collection Interpreters accept 1 system and 1 or more methods, and are active for multiple generations
+they write coll formatted lines to a text file on a per letter/parameter basis
+dictionary Interpreters accept 1 or more systems and 1 or more methods, and are active for multiple generation
+they assign or append values to the predefined properties of a dictionary format
+matrix Interpreters accept 1 or more systems and 1 methods, and are active for 1 generation
+the method should map letter/parameters to cells 
+dimcount should be equal to the number of systems (+/- 1), and planecount equal to parameterSize
+
+
+
+
+
+
+no methods will write the parameter values of the system letters to a bufer, with channels equal to parameter size
+
+
+
+
+Interpretations have three components:
+
+A series of methods that take in a system, and return an array of values.
+these are stored in a folder in subroutines/interpretations
+the "dir" property in the interpretation_template gives the folder name 
+
+A method named "format", for turning this array into a string 
+these methods are named after max objects, and are stored in formats 
+
+
+Message protocol
+
+InterpretationManager starts off with status "waiting", indicating the interpreter thread is idle
+
+the "message" setter for an InterpretationManager with id "X" is triggered when the systemInterpretationSchedule Array has an object with a key "X" at index = currenGeneration 
+the value of this key is a string {'open'|'store'|'write'|'close'} 
+
+
+assume the message setter has argument "A" (an object containing action: string, index: number, and systems: SystemClass[]
+if status === 'waiting' 
+    status = 'active'
+    if backlog.length === 0 
+    the message setter calls X.interpreter.postMessage(A)
+    else 
+    X.backlog.push(A)
+    X.interpreter.postMessage(X.backlog.shift())
+else 
+    X.backlog.push(A)
+
+when the interpreter thread is done writing, it sends a "ready" message (unless it received a close message, it which case it exits)
+    on receiving a ready message
+    if status === 'waiting' 
+        throw an Error, as this shouldn't happen
+    else
+        if backlog.length === 0 
+        status = 'waiting'
+        else 
+            X.interpreter.postMessage(X.backlog.shift())
+    on recieinv an exit message 
+
+this element is an object 
+

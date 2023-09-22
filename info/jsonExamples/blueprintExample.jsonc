@@ -1,0 +1,47 @@
+{
+"alphabet": {
+    "core": [70,71,72],
+    "ascii": ["F","+","-"],
+    "grapheme": [[70], [43], [45]]
+},
+"timeout": 100000,
+
+"systems": [
+        {    
+            "id": "systemA", // the key in the processor.systems map, and the folder created in experiments/results
+            "state": "quadKochIsland",// a file stored in data/state 
+            "schemata": "quadKochIsland" // a file stored in data/schemata, if two rules have the same 
+        }
+],
+"interactions": [
+    {
+        "id": "interpretationA", // becomes the key in the processor.int_generators map
+        "filename": "record", // a js file stored in data/subroutines/interactions, 
+        "targets": ["systemA"] // list of system ids that are arguments
+    }
+],
+"networks":[
+        {
+            "id": "networkA", // the key in the processor.systems map, and the folder created in experiments/results
+            "filename": "testNetwork" // a file stored in data/network
+        }
+    ],
+"logFiles": {
+    "letters": [0,1], // log for these cycles
+    "vars": "all" // or for all
+    /*parameters*/ //or for none, if not listed
+},
+"textFiles": [
+    // each text file represents a stream during the interpretation stage
+            {
+                "id": "lettersOut", // the key in system.files, and the filename to write to
+                "objclass": "max.text" // useful for formatting writing methods
+            }
+],
+"jsonFiles": [
+    {
+        "id": "lettersOut", // the key in system.files, and the 
+        "objclass": "max.text" // useful for formatting writing methods. null indicates a log
+    }
+]
+}

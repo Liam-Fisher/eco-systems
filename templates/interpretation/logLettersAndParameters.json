@@ -1,0 +1,7 @@
+{
+    "attrs": {
+        "precision": 5
+    },
+    "mode": "streaming",
+    "maxclass": "collection"
+}

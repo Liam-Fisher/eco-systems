@@ -1,0 +1,12 @@
+Object pattern syntax 
+<channel_id>~> remotely, (should usually be to NETWORK or another patcher) 
+=> by reference (dictionary, jit_matrix, jit_gl_texture etc...)
+-> send by patch chords
+<||> send by patch chords
+[n,m]> src/tgt inlet (otherwise assumed to be 0,0)
+->? any objects matching the type
+
+Example object patterns- 
+[...dict] => (mc.pattern~  <->  mc.chord~) -> mc.mtof~ -> mc.phasor~ ?>
+
+

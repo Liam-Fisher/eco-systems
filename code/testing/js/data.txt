@@ -1,0 +1,8 @@
+
+ (pos = );
+(code = Math.min(tgt.index%16, 2));
+(message = reset);
+(amp = tgt.vars.stepSize);
+(theta = (tgt.vars.direction * (2 * Math.PI)));
+(tgt.vars.x_position += (Math.sin(theta) * amp));
+(tgt.vars.y_position += (Math.cos(theta) * amp));}

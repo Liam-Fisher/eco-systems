@@ -1,0 +1,48 @@
+design experiment -
+load components:
+    systems -> schemata, interactions 
+    interpretations -> patchers 
+build network script
+start process and set generation to 0
+per generation:
+    activate any systems whose lifespan includes the current generation:
+    create "cycle" generator for each newly activated system
+        per activated system:
+            call its "cycle" generator
+            activate any schemata whose era includes the current system age:
+                per activated schema:
+                call the active schema's pre_production hooks
+                    per schema syntax match:
+                        set the replacement to the current match
+                        set the input parameters to the result of the active schema's metric
+                        call the active schema's pre_mapping hooks  
+                            per schema map: 
+                                if map returns an array of new parameters: 
+                                    set the replacement to the active schema's successor at the current mapping index
+                                    set the match parameters to the parameters returned by the map
+                                else continue to the next map
+                        call the active schema's post_mapping hooks
+                        splice the output parameters into the system parameters from the match offset to the match length
+                        return the ouput letters
+                        if there are more matches, continue to the next match
+                call the active schema's post_production hooks
+                yield from from cycle generator
+            if there are more activated systems, continue to the next one 
+    per interaction whose target systems are all active:
+        call its generator until it is done
+        continue to the next interaction
+    for each inactive interpreter:
+        if it has a group of target systems that are all active:
+            create a new interpreter
+    per active interpreter:
+        if it is scheduled for the current generation
+            for each group of target systems that are active
+                send a SystemData message, creating a write
+            else if it is no longer scheduled, or all of its target systems are inactive
+                add a handler for the file completed message that terminates the interpreters thread
+increment generation 
+deactive any active systems not scheduled at the current generation
+if at max generations:
+wait for all active interpreters to be terminated
+emit the network script file into max
+terminate the node process

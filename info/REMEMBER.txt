@@ -1,0 +1,5 @@
+Principles to keep in mind going forward:
+Formatting of blueprints and templates in json format can be done at the design level
+ - templates should correspond as much to the actual structures they inform as possible
+ 
+  

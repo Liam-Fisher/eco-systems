@@ -1,0 +1,14 @@
+{
+    "letters": "FHFHFHF",
+    "parameters": [[0],[0],[0],[0],[0],[0],[0]],
+    "constants": {
+        "maxLetters": 10000000000
+    },
+    "props": {
+        "stepSize": 0.02,
+        "turnIncrement": 0.25,
+        "x_position": 0,
+        "y_position": 0,
+        "direction": 0
+    }
+}

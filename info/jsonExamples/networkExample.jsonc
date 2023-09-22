@@ -1,0 +1,10 @@
+{
+
+    "audio": "off",
+    "patcherfile": "test_turtle",
+    "storagefile": "test_turtlePreset",
+    "maxtotaltime": 100000,
+    "maxruntime": 100000,
+        "args": [] // up to 8 args,
+
+}

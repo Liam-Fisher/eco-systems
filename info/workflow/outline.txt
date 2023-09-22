@@ -1,0 +1,9 @@
+Workflow:
+1 - build audio or visual patch 
+2a - test patch messagging - (keyword inventory, message armoury, m
+2b -detemine interpretation keywords -
+3a - test with inpatch senders and constructers for messages - 
+3b - detemine elements interpretation routines - (message structure, 
+ // repeat until full routine structure is determined -
+4a = determine message patterns - 
+4b = determine System word production patterns

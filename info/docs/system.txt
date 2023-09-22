@@ -1,0 +1,6 @@
+A system is the core data structure of the process.
+its letters property is matched against regular expressions
+it is passed as the only argument to subroutines
+an array of systems is passed in groups to interaction 
+
+
